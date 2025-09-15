@@ -346,7 +346,7 @@ const checkLastPcbEvent = async () => {
                     if (apiKey !== undefined && apiURL !== undefined) {
                         try {
                             const response = await eda.sys_ClientUrl.request(
-                                `${apiURL}/users/current/heartbeats`,
+                                `${apiURL}/users/current/heartbeats.bulk`,
                                 'POST',
                                 JSON.stringify(body),
                                 {
